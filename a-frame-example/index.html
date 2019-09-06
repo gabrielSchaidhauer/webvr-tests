@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            
+        </a-assets>
+
+        <a-entity environment="preset: forest; numDressing: 500">
+            <a-camera wasd-controls-enabled="false"></a-camera>]
+            <a-entity position="-1.2 3 -5">
+                <a-text id="centerText" width="10"></a-text>
+            </a-entity>
+            <a-entity position="4 3 0" rotation="0 -75 0">
+                <a-text id="rightText" width="10"></a-text>
+            </a-entity>
+            <a-box id="right" color="blue" position="10 2 0" rotation="0 45 45" scale="2 2 2"></a-box>
+            
+            <a-entity position="-4 3 0" rotation="0 75 0">
+                <a-text id="leftText" width="10"></a-text>
+            </a-entity>
+            <a-box id="left" color="green" position="-10 2 0" rotation="0 45 45" scale="2 2 2"></a-box>
+            
+            <a-entity position="0 9 -3" rotation="45 0 0">
+                <a-text id="upperText" width="10"></a-text>
+            </a-entity>
+            <a-box id="top" color="yellow" position="0 10 -1" rotation="0 45 45" scale="2 2 2"></a-box>
+            
+            <a-entity position="0 0.5 -0.5" rotation="-45 0 0">
+                <a-text id="bottomText" width="10"></a-text>
+            </a-entity>
+            <a-box id = "bottom" color="red" position="0 1 0" rotation="0 45 45" scale="0.1 0.1 0.1"></a-box>
+        </a-entity>
+    </a-scene>
+    <script src="./main.js"></script>
+</body>
+
+</html>
